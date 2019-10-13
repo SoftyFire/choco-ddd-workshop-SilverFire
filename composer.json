@@ -1,0 +1,30 @@
+{
+  "require": {
+    "php": "^7.1",
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "ext-pdo_sqlite": "*",
+    "ramsey/uuid": "*",
+    "moneyphp/money": "*",
+    "ocramius/generated-hydrator": "*",
+    "zendframework/zend-hydrator": "*",
+    "yohang/finite": "^1.1",
+    "psr/container": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Billing\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Billing\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "serve": "php -S 0.0.0.0:8080 -t public/"
+  }
+}
